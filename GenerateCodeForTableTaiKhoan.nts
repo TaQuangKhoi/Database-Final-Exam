@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Session xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Data>vannga, yE8ZijmY6gE6GL, 1
+thithuong, GTeWmpj7jgEFWP, 1
+thanhthanh, AEKdTuTHk294wG, 1
+minhhang, ZSMbW3KATo3Has, 1
+dathu, EyfiK86owKKGrv, 1
+
+vantrung, 2YmyTXguZHUw9q, 2
+thithuy, vGVJP8RJ8ds9Ck, 2
+thanhnguyen, B7nRcY2Tt5eqzK, 2
+hoangminh, byhhEpGLpn4h9F, 2
+dathuy, J7rudUc6sisYfs, 2
+
+quangkhoi, CrZm9AQ7wyMwDh, 0</Data>
+  <Pattern>('$0', '$1', '$2'),</Pattern>
+  <RowDelimiter>\n</RowDelimiter>
+  <ColumnDelimiter>,</ColumnDelimiter>
+</Session>
