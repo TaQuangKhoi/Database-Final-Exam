@@ -172,6 +172,19 @@ VALUES
 ('B220003', 'PH22003', 'Mẹ'),
 ('B220004', 'PH22004', 'Ông Ngoại'),
 ('B220005', 'PH22005', 'Bà Nội')
+GO
+INSERT INTO KyNang (MaKN, TenKN)
+VALUES
+('KN01', 'Giải quyết vấn đề'),
+('KN02', 'Thuyết trình'),
+('KN03', 'Đặt câu hỏi'),
+('KN04', 'Thu thập thông tin'),
+('KN05', 'Tính toán'),
+('KN06', 'So sánh'),
+('KN07', 'Nhận thức hình học 2 chiều và 3 chiều'),
+('KN08', 'Đo lường độ dài cân nặng thể tích nhiệt độ thời gian tiền bạc'),
+('KN09', 'Cách sử dụn bản đồ và chỉ dẫn')
+
 GO 
 SELECT * FROM Be
 Go 
@@ -180,3 +193,5 @@ GO
 SELECT * FROM PhuHuynh
 GO 
 SELECT * FROM MoiQuanHe
+GO
+SELECT * FROM KyNang
