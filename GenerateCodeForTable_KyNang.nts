@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Session xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Data>KN01, Giải quyết vấn đề
+KN02, Thuyết trình
+KN03, Đặt câu hỏi
+KN04, Thu thập thông tin
+KN05, Tính toán
+KN06, So sánh
+KN07, Nhận thức hình học 2 chiều và 3 chiều
+KN08, Đo lường độ dài cân nặng thể tích nhiệt độ thời gian tiền bạc
+KN09, Cách sử dụn bản đồ và chỉ dẫn</Data>
+  <Pattern>('$0', '$1'),</Pattern>
+  <RowDelimiter>\n</RowDelimiter>
+  <ColumnDelimiter>,</ColumnDelimiter>
+</Session>
