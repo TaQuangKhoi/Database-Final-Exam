@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Session xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Data>HD2201001, Học về tình bạn, LV01, 
+HD2201002, Không khóc khi lạc đường, LV02, KN01
+HD2201003, Chuyến Tàu Hoàng Hôn, LV03, 
+HD2202001, Bạn là ai, LV04, KN03
+HD2202003, Bài thể dục buổi sáng, LV05, 
+HD2202004, Nói chuyện với người lớn, LV05, KN02</Data>
+  <Pattern>('$0', '$1','$2','$3'),</Pattern>
+  <RowDelimiter>\n</RowDelimiter>
+  <ColumnDelimiter>,</ColumnDelimiter>
+</Session>
