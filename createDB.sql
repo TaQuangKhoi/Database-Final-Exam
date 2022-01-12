@@ -9,7 +9,7 @@ CREATE TABLE Be (
     TenBe NVARCHAR(7),
     TenLot NVARCHAR(15),
     HoBe NVARCHAR(7),
-    NgaySinh DATETIME,
+    NgaySinh DATE,
     NoiSinh NVARCHAR(15),
     Ap NVARCHAR(15),
     Xa NVARCHAR(15),
@@ -48,7 +48,7 @@ CREATE TABLE GiaoVien (
     TenGV NVARCHAR(7),   
     TenLot NVARCHAR(15),   
     HoGV NVARCHAR(7),   
-    NgaySinh DATETIME,
+    NgaySinh DATE,
     SoDienThoai NVARCHAR(12),   
     Ap NVARCHAR(15),
     Xa NVARCHAR(15),
@@ -195,7 +195,21 @@ VALUES
 GO
 INSERT INTO HoatDong (MaHoatDong, NoiDung, MaLV, MAKN)
 VALUES
-
+('HD2201001', 'Học về tình bạn','LV01','KN01'),
+('HD2201002', 'Không khóc khi lạc đường','LV02','KN01'),
+('HD2201003', 'Chuyến Tàu Hoàng Hôn','LV03','KN01'),
+('HD2202001', 'Bạn là ai','LV04','KN03'),
+('HD2202003', 'Bài thể dục buổi sáng','LV05','KN01'),
+('HD2202004', 'Nói chuyện với người lớn','LV05','KN02')
+Go
+INSERT INTO HoatDongCuaBe(MaBe, MaHoatDong, ThoiGianBatDau, ThoiGianKetThuc)
+VALUES
+('B220001', 'HD2201001','2022-01-01 08:08:00','2022-01-01 10:08:00'),
+('B220001', 'HD2201002','2022-01-01 08:08:00','20220101 10:08:00'),
+('B220001', 'HD2201003','2022-01-01 08:08:00','2022-01-01 10:08:00'),
+('B220001', 'HD2202001','2022-01-01 08:08:00','2022-01-01 10:08:00'),
+('B220001', 'HD2202003','2022-01-01 08:08:00','2022-01-01 10:08:00'),
+('B220001', 'HD2202004','2022-01-01 08:08:00','2022-01-01 11:00:00')
 GO
 SELECT * FROM Be
 Go 
