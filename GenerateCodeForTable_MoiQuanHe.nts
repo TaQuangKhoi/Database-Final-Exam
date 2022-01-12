@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Session xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Data>B220001, PH22001, Cha
+B220002, PH22002, Mẹ
+B220003, PH22003, Mẹ
+B220004, PH22004, Ông Ngoại
+B220005, PH22005, Bà Nội</Data>
+  <Pattern>('$0', '$1', '$2'),</Pattern>
+  <RowDelimiter>\n</RowDelimiter>
+  <ColumnDelimiter>,</ColumnDelimiter>
+</Session>
