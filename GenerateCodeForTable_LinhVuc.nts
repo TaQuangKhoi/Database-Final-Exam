@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Session xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Data>LV01, Xã hội
+LV02, Cảm Xúc
+LV03, Ngôn ngữ và văn học
+LV04, Nhận thức
+LV05, Thể chất
+LV06, Giao tiếp </Data>
+  <Pattern>('$0', '$1'),</Pattern>
+  <RowDelimiter>\n</RowDelimiter>
+  <ColumnDelimiter>,</ColumnDelimiter>
+</Session>
