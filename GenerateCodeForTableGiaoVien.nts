@@ -5,7 +5,7 @@ GV22002, Thương, Thị, Trần, 841219224898, 7, Mạnh Bá, Trương Long, H�
 GV22003, Thanh, Thanh, Phạm, 841218352993, 8, Bờ Mới, Cái Răng, Hậu Giang
 GV22004, Hằng, Minh, Trương, 841215352100, 9, Minh Sáng, Sông Châu, Hậu Giang
 GV22005, Thu, Dạ, Lâm, 841217993910, 10, Rãnh Năm, Cái Bè, Hậu Giang</Data>
-  <Pattern>('$0', '$1', '$2', '$3', '$4', '$5', '$6', '$7', '$8', '$9', '$10', '$11', '$12'),</Pattern>
+  <Pattern>('$0', '$1', '$2', '$3', '$4', '$5', '$6', '$7', '$8'),</Pattern>
   <RowDelimiter>\n</RowDelimiter>
   <ColumnDelimiter>,</ColumnDelimiter>
 </Session>
