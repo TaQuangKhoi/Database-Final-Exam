@@ -126,3 +126,28 @@ CREATE TABLE TepDaPhuongTien (
     MaTN CHAR(11) FOREIGN KEY REFERENCES TinNhan(MaTN)
 )
 GO
+INSERT INTO Be (MaBe, TenBe, TenLot, HoBe, NgaySinh, NoiSinh, Ap, Xa, Huyen, Tinh, CanNang, ChieuCao, TinhTrangHoc)
+VALUES
+('B220001', 'Huy', 'Văn', 'Nguyễn', '20170122', 'Cần Thơ', '5', 'Thương Hai', 'Cái Bè', 'Hậu Giang', '7', '65.9', '1'),
+('B220002', 'Hùng', 'Minh', 'Tạ', '20170221', 'BRVT', '7', 'Mạnh Bá', 'Trương Long', 'Hậu Giang', '6', '65', '1'),
+('B220003', 'Ngọc', 'Hồng', 'Nguyễn', '20170412', 'Hải Dương', '8', 'Bờ Mới', 'Cái Răng', 'Hậu Giang', '6.5', '64', '1'),
+('B220004', 'Lan', 'Diệu', 'Hứa', '20170723', 'Lâm Đồng', '9', 'Minh Sáng', 'Sông Châu', 'Hậu Giang', '6', '65.5', '1'),
+('B220005', 'Mỹ', 'Ngọc', 'Trần', '20170815', 'BRVT', '10', 'Rãnh Năm', 'Cái Bè', 'Hậu Giang', '7', '65', '1')
+GO
+INSERT INTO TaiKhoan (TenTaiKhoan, MatKhau, LoaiTK)
+VALUES
+('vannga', 'yE8ZijmY6gE6GL', '1'),
+('thithuong', 'GTeWmpj7jgEFWP', '1'),
+('thanhthanh', 'AEKdTuTHk294wG', '1'),
+('minhhang', 'ZSMbW3KATo3Has', '1'),
+('dathu', 'EyfiK86owKKGrv', '1'),
+('vantrung', '2YmyTXguZHUw9q', '2'),
+('thithuy', 'vGVJP8RJ8ds9Ck', ''),
+('thanhnguyen', 'B7nRcY2Tt5eqzK', '2'),
+('hoangminh', 'byhhEpGLpn4h9F', '2'),
+('dathuy', 'J7rudUc6sisYfs', '2'),
+('quangkhoi', 'CrZm9AQ7wyMwDh', '0')
+GO
+SELECT * FROM Be
+Go
+SELECT * FROM TaiKhoan ORDER BY LoaiTK
