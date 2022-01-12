@@ -70,7 +70,7 @@ CREATE TABLE LinhVuc (
 )
 GO
 CREATE TABLE KyNang (
-    MaKN VARCHAR(4)
+    MaKN CHAR(4)
     CONSTRAINT PK_KyNang_MaKN PRIMARY KEY,
     TenKN NVARCHAR(100)
 )
@@ -81,7 +81,7 @@ CREATE TABLE HoatDong (
     ThoiGianBatDau DATETIME,
     ThoiGianKetThuc DATETIME,
     MaLV CHAR(4) FOREIGN KEY REFERENCES LinhVuc(MaLV),
-    MaKN CHAR(4) FOREIGN KEY REFERENCES KyNang(MaPH)
+    MaKN CHAR(4) FOREIGN KEY REFERENCES KyNang(MaKN)
 )
 GO
 CREATE TABLE HoatDongCuaBe ( /* Giữa bảng Bé và Bảng HoatDong */
@@ -125,3 +125,4 @@ CREATE TABLE TepDaPhuongTien (
     NgayTaiLen DATETIME,
     MaTN CHAR(11) FOREIGN KEY REFERENCES TinNhan(MaTN)
 )
+GO
