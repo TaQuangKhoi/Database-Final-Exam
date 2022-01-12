@@ -148,6 +148,25 @@ VALUES
 ('dathuy', 'J7rudUc6sisYfs', '2'),
 ('quangkhoi', 'CrZm9AQ7wyMwDh', '0')
 GO
+INSERT INTO PhuHuynh (MaPH, TenPH, TenLot, HoPH, SoDienThoai, Ap, Xa, Huyen, Tinh, TenTaiKhoan)
+VALUES
+('PH22001', 'Trung', 'Văn', 'Nguyễn', '841212569343', '5', 'Thương Hai', 'Cái Bè', 'Hậu Giang','vantrung'),
+('PH22002', 'Thúy', 'Thị', 'Trần', '841213705349', '7', 'Mạnh Bá', 'Trương Long', 'Hậu Giang','thithuy'),
+('PH22003', 'Thanh', 'Thanh', 'Nguyễn', '841211344285', '8', 'Bờ Mới', 'Cái Răng', 'Hậu Giang','thanhnguyen'),
+('PH22004', 'Minh', 'Hoàng', 'Trương', '841214413097', '9', 'Minh Sáng', 'Sông Châu', 'Hậu Giang','hoangminh'),
+('PH22005', 'Thuỷ', 'Dạ', 'Lâm', '841211234997', '10', 'Rãnh Năm', 'Cái Bè', 'Hậu Giang','dathuy')
+GO
+INSERT INTO GiaoVien (MaGV, TenGV, TenLot, HoGV, NgaySinh, Ap, Xa, Huyen, Tinh, SoDienThoai, TenTaiKhoan)
+VALUES
+('GV22001', 'Nga', 'Văn', 'Nguyễn', '19990204', '841214621082', '5', 'Thương Hai', 'Cái Bè','Hậu Giang','vannga'),
+('GV22002', 'Thương', 'Thị', 'Trần', '19980423', '841219224898', '7', 'Mạnh Bá', 'Trương Long','Hậu Giang','thithuong'),
+('GV22003', 'Thanh', 'Thanh', 'Phạm', '20000923', '841218352993', '8', 'Bờ Mới', 'Cái Răng','Hậu Giang','thanhthanh'),
+('GV22004', 'Hằng', 'Minh', 'Trương', '19990505', '841215352100', '9', 'Minh Sáng', 'Sông Châu','Hậu Giang','minhhang'),
+('GV22005', 'Thu', 'Dạ', 'Lâm', '19970506', '841217993910', '10', 'Rãnh Năm', 'Cái Bè','Hậu Giang','dathu')
+
+GO
 SELECT * FROM Be
 Go
 SELECT * FROM TaiKhoan ORDER BY LoaiTK
+GO
+SELECT * FROM PhuHuynh
