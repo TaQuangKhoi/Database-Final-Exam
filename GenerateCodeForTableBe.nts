@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Session xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Data>B220001, Huy, Văn, Nguyễn, 20170122, Cần Thơ
+B220002, Hùng, Minh, Tạ, 20170221, BRVT
+B220003, Ngọc, Hồng, Nguyễn, 20170412, Hải Dương
+B220004, Lan, Diệu, Hứa, 20170723, Lâm Đồng
+B220005, Mỹ, Ngọc, Trần, 20170815, BRVT</Data>
+  <Pattern>('$0', '$1', '$2', '$3', '$4', '$5'),</Pattern>
+  <RowDelimiter>\n</RowDelimiter>
+  <ColumnDelimiter>,</ColumnDelimiter>
+</Session>
