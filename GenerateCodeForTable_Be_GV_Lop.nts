@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Session xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Data>B220001,GV22001,L01
+B220002,GV22002,L01
+B220003,GV22003,L02
+B220004,GV22004,L02
+B220005,GV22004,L02</Data>
+  <Pattern>('$0', '$1', '$2'),</Pattern>
+  <RowDelimiter>\n</RowDelimiter>
+  <ColumnDelimiter>,</ColumnDelimiter>
+</Session>
