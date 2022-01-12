@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Session xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Data>GV22001, Nga, Văn, Nguyễn, 841214621082, 5, Thương Hai, Cái Bè, Hậu Giang, vannga
-GV22002, Thương, Thị, Trần, 841219224898, 7, Mạnh Bá, Trương Long, Hậu Giang, thithuong
-GV22003, Thanh, Thanh, Phạm, 841218352993, 8, Bờ Mới, Cái Răng, Hậu Giang, thanhthanh
-GV22004, Hằng, Minh, Trương, 841215352100, 9, Minh Sáng, Sông Châu, Hậu Giang, minhhang
-GV22005, Thu, Dạ, Lâm, 841217993910, 10, Rãnh Năm, Cái Bè, Hậu Giang, dathu</Data>
-  <Pattern>('$0', '$1', '$2', '$3', '$4', '$5', '$6', '$7', '$8','$9'),</Pattern>
+  <Data>GV22001, Nga, Văn, Nguyễn, 19990204,841214621082, 5, Thương Hai, Cái Bè, Hậu Giang, vannga
+GV22002, Thương, Thị, Trần, 19980423,841219224898, 7, Mạnh Bá, Trương Long, Hậu Giang, thithuong
+GV22003, Thanh, Thanh, Phạm, 20000923,841218352993, 8, Bờ Mới, Cái Răng, Hậu Giang, thanhthanh
+GV22004, Hằng, Minh, Trương, 19990505,841215352100, 9, Minh Sáng, Sông Châu, Hậu Giang, minhhang
+GV22005, Thu, Dạ, Lâm, 19970506,841217993910, 10, Rãnh Năm, Cái Bè, Hậu Giang, dathu</Data>
+  <Pattern>('$0', '$1', '$2', '$3', '$4', '$5', '$6', '$7', '$8','$9','$10'),</Pattern>
   <RowDelimiter>\n</RowDelimiter>
   <ColumnDelimiter>,</ColumnDelimiter>
 </Session>
