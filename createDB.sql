@@ -165,8 +165,18 @@ VALUES
 ('GV22005', 'Thu', 'Dạ', 'Lâm', '19970506', '841217993910', '10', 'Rãnh Năm', 'Cái Bè','Hậu Giang','dathu')
 
 GO
+INSERT INTO MoiQuanHe (MaBe, MaPH, QuanHe)
+VALUES
+('B220001', 'PH22001', 'Cha'),
+('B220002', 'PH22002', 'Mẹ'),
+('B220003', 'PH22003', 'Mẹ'),
+('B220004', 'PH22004', 'Ông Ngoại'),
+('B220005', 'PH22005', 'Bà Nội')
+GO 
 SELECT * FROM Be
-Go
+Go 
 SELECT * FROM TaiKhoan ORDER BY LoaiTK
-GO
+GO 
 SELECT * FROM PhuHuynh
+GO 
+SELECT * FROM MoiQuanHe
