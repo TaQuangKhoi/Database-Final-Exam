@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Session xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Data>TN220100001, 1, Thong bao 1, ND, , GV22001
+TN220100002, 1, Thong bao 2, ND, , GV22002
+TN220100003, 1, Thong bao 3, ND, , GV22003
+TN220100004, 1, Thong bao 4, ND, , GV22004
+TN220100005, 1, Thong bao 5, ND, , GV22005</Data>
+  <Pattern>('$0', '$1', '$2', '$3', '$4', '$5'),</Pattern>
+  <RowDelimiter>\n</RowDelimiter>
+  <ColumnDelimiter>,</ColumnDelimiter>
+</Session>
