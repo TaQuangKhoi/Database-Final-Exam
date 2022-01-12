@@ -228,7 +228,19 @@ VALUES
 Go
 INSERT INTO HoaDon (MaHoaDon, NgayDuKien, TrangThai, NgayThanhToan, MaBe)
 VALUES 
-
+('HDTT22010001', '2022-01-30', '0', '2022-02-02', 'B220001'),
+('HDTT22010002', '2022-01-30', '0', '', 'B220002'),
+('HDTT22010003', '2022-01-30', '0', '', 'B220003'),
+('HDTT22010004', '2022-01-30', '0', '', 'B220004'),
+('HDTT22010005', '2022-01-30', '0', '', 'B220005')
+GO
+INSERT INTO Be_Lop_GiaoVien (MaBe, MaGV, MaLop)
+VALUES
+('B220001', 'GV22001', 'L01'),
+('B220002', 'GV22002', 'L01'),
+('B220003', 'GV22003', 'L02'),
+('B220004', 'GV22004', 'L02'),
+('B220005', 'GV22004', 'L02')
 GO
 SELECT * FROM Be
 Go 
@@ -244,13 +256,35 @@ SELECT * FROM LinhVuc
 
 /* Câu Lệnh Truy Xuất*/
 -- 1. Tìm các hoạt động của bé trong tuần này
+GO
 SELECT *
-FROM HoatDongCuaBe
-Where 
--- (SELECT DATEADD(wk, DATEDIFF(wk,0,GETDATE()), 0) MondayOfCurrentWeek)
+FROM HoatDongCuaBe lk, HoatDong hd
+where lk.MaHoatDong = hd.MaHoatDong and
+lk.ThoiGianBatDau between 
+(SELECT DATEADD(wk, DATEDIFF(wk,0,GETDATE()), 0) MondayOfCurrentWeek) 
+and (Select DATEADD(DAY, 8 - DATEPART(WEEKDAY, GETDATE()), CAST(GETDATE() AS DATE)) [Week_End_Date])
 
--- 2. Tìm Những lớp có hai giáo viên trở lên
+-- 2. Tìm những lớp có hai giáo viên trở lên
+GO
+SELECT L.TenLop
+FROM Lop AS L, Be_Lop_GiaoVien AS BLG
+WHERE L.MaLop = BLG.MaLop
+GROUp by L.TenLop
+having count(BLG.MaGV) > 2
 
--- 3. Đếm số lượng bé của lớp cho trước
+-- 3. Đếm số lượng bé của lớp cho trước ✅
+GO
+SELECT COUNT(MaBe) AS 'Số Lượng Học Sinh Trong Lớp'
+FROM Be_Lop_GiaoVien
+WHERE MaLop = 'L02'
 
--- 4. 
+-- 4. Tìm phụ huynh có hai bé theo học tại trường ✅
+Select p.TenPH
+from PhuHuynh p, MoiQuanHe m
+where p.MaPH = m.MaBe
+group by p.TenPH
+having count(MaBe) > 2
+-- 5. Đếm số lần thanh toán trễ học phí của từng bé
+select hd.NgayThanhToan
+from HoaDon hd
+where hd.NgayDuKien < hd.NgayThanhToan
