@@ -78,8 +78,6 @@ GO
 CREATE TABLE HoatDong (
     MaHoatDong CHAR(9) CONSTRAINT PK_HoatDong_MaHoatDong PRIMARY KEY,
     NoiDung NVARCHAR(MAX),
-    ThoiGianBatDau DATETIME,
-    ThoiGianKetThuc DATETIME,
     MaLV CHAR(4) FOREIGN KEY REFERENCES LinhVuc(MaLV),
     MaKN CHAR(4) FOREIGN KEY REFERENCES KyNang(MaKN)
 )
@@ -185,7 +183,20 @@ VALUES
 ('KN08', 'Đo lường độ dài cân nặng thể tích nhiệt độ thời gian tiền bạc'),
 ('KN09', 'Cách sử dụn bản đồ và chỉ dẫn')
 
-GO 
+GO
+INSERT INTO LinhVuc (MaLV, TenLV)
+VALUES 
+('LV01', 'Xã hội'),
+('LV02', 'Cảm Xúc'),
+('LV03', 'Ngôn ngữ và văn học'),
+('LV04', 'Nhận thức'),
+('LV05', 'Thể chất'),
+('LV06', 'Giao tiếp')
+GO
+INSERT INTO HoatDong (MaHoatDong, NoiDung, MaLV, MAKN)
+VALUES
+
+GO
 SELECT * FROM Be
 Go 
 SELECT * FROM TaiKhoan ORDER BY LoaiTK
@@ -195,3 +206,5 @@ GO
 SELECT * FROM MoiQuanHe
 GO
 SELECT * FROM KyNang
+GO
+SELECT * FROM LinhVuc
