@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Session xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Data>L01, Chồi 1
+L02, Chồi 2
+L03, Chồi 3</Data>
+  <Pattern>('$0', '$1'),</Pattern>
+  <RowDelimiter>\n</RowDelimiter>
+  <ColumnDelimiter>,</ColumnDelimiter>
+</Session>
