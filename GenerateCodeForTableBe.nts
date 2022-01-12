@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Session xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Data>B220001, Huy, Văn, Nguyễn, 20170122, Cần Thơ
-B220002, Hùng, Minh, Tạ, 20170221, BRVT
-B220003, Ngọc, Hồng, Nguyễn, 20170412, Hải Dương
-B220004, Lan, Diệu, Hứa, 20170723, Lâm Đồng
-B220005, Mỹ, Ngọc, Trần, 20170815, BRVT</Data>
-  <Pattern>('$0', '$1', '$2', '$3', '$4', '$5'),</Pattern>
+  <Data>B220001, Huy, Văn, Nguyễn, 20170122, Cần Thơ, 5, Thương Hai, Cái Bè, Hậu Giang, 7, 65.9, 1
+B220002, Hùng, Minh, Tạ, 20170221, BRVT, 7, Mạnh Bá, Trương Long, Hậu Giang, 6, 65, 1
+B220003, Ngọc, Hồng, Nguyễn, 20170412, Hải Dương, 8, Bờ Mới, Cái Răng, Hậu Giang, 6.5, 64, 1
+B220004, Lan, Diệu, Hứa, 20170723, Lâm Đồng, 9, Minh Sáng, Sông Châu, Hậu Giang, 6, 65.5, 1
+B220005, Mỹ, Ngọc, Trần, 20170815, BRVT, 10, Rãnh Năm, Cái Bè, Hậu Giang, 7, 65, 1</Data>
+  <Pattern>('$0', '$1', '$2', '$3', '$4', '$5', '$6', '$7', '$8', '$9', '$10', '$11', '$12'),</Pattern>
   <RowDelimiter>\n</RowDelimiter>
   <ColumnDelimiter>,</ColumnDelimiter>
 </Session>
