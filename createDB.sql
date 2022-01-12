@@ -105,12 +105,13 @@ CREATE TABLE TinNhan (
     NguoiNhan VARCHAR(7),
     TieuDe VARCHAR(50),
     NoiDung VARCHAR(MAX),
-    DinhKem VARCHAR(MAX)
+    DinhKem VARCHAR(MAX),
+	MaNguoiGui CHAR(7) FOREIGN KEY REFERENCES GiaoVien(MaGV)
 )
 GO
 CREATE TABLE HoaDon (
     MaHoaDon CHAR(12) CONSTRAINT PK_HoaDon_MaHoaDon PRIMARY KEY,
-    NgayDuKien DATETIME,
+    NgayDuKien DATE,
     TrangThai INT,
     NgayThanhToan DATETIME,
     MaBe CHAR(7) FOREIGN KEY REFERENCES Be(MaBe)
@@ -204,12 +205,30 @@ VALUES
 Go
 INSERT INTO HoatDongCuaBe(MaBe, MaHoatDong, ThoiGianBatDau, ThoiGianKetThuc)
 VALUES
-('B220001', 'HD2201001','2022-01-01 08:08:00','2022-01-01 10:08:00'),
-('B220001', 'HD2201002','2022-01-01 08:08:00','20220101 10:08:00'),
-('B220001', 'HD2201003','2022-01-01 08:08:00','2022-01-01 10:08:00'),
-('B220001', 'HD2202001','2022-01-01 08:08:00','2022-01-01 10:08:00'),
-('B220001', 'HD2202003','2022-01-01 08:08:00','2022-01-01 10:08:00'),
+('B220001', 'HD2201001','2022-01-11 08:08:00','2022-01-11 10:08:00'),
+('B220001', 'HD2201002','2022-01-12 08:08:00','2022-01-12 10:08:00'),
+('B220001', 'HD2201003','2022-01-13 08:08:00','2022-01-13 10:08:00'),
+('B220001', 'HD2202001','2022-01-14 08:08:00','2022-01-14 10:08:00'),
+('B220001', 'HD2202003','2022-01-15 08:08:00','2022-01-15 10:08:00'),
 ('B220001', 'HD2202004','2022-01-01 08:08:00','2022-01-01 11:00:00')
+GO
+INSERT INTO Lop (MaLop, TenLop)
+VALUES
+('L01', 'Chồi 1'),
+('L02', 'Chồi 2'),
+('L03', 'Chồi 3')
+GO
+INSERT INTO TinNhan (MaTN, NguoiNhan, TieuDe, NoiDung, DinhKem, MaNguoiGui)
+VALUES 
+('TN220100001', '1', 'Thong bao 1', 'ND', '', 'GV22001'),
+('TN220100002', '1', 'Thong bao 2', 'ND', '', 'GV22002'),
+('TN220100003', '1', 'Thong bao 3', 'ND', '', 'GV22003'),
+('TN220100004', '1', 'Thong bao 4', 'ND', '', 'GV22004'),
+('TN220100005', '1', 'Thong bao 5', 'ND', '', 'GV22005')
+Go
+INSERT INTO HoaDon (MaHoaDon, NgayDuKien, TrangThai, NgayThanhToan, MaBe)
+VALUES 
+
 GO
 SELECT * FROM Be
 Go 
@@ -222,3 +241,16 @@ GO
 SELECT * FROM KyNang
 GO
 SELECT * FROM LinhVuc
+
+/* Câu Lệnh Truy Xuất*/
+-- 1. Tìm các hoạt động của bé trong tuần này
+SELECT *
+FROM HoatDongCuaBe
+Where 
+-- (SELECT DATEADD(wk, DATEDIFF(wk,0,GETDATE()), 0) MondayOfCurrentWeek)
+
+-- 2. Tìm Những lớp có hai giáo viên trở lên
+
+-- 3. Đếm số lượng bé của lớp cho trước
+
+-- 4. 
