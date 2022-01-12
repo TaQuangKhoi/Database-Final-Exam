@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Session xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Data>HDTT22010001, 2022-01-30, 0, ,B220001
+HDTT22010002, 2022-01-30, 0, ,B220002
+HDTT22010003, 2022-01-30, 0, ,B220003
+HDTT22010004, 2022-01-30, 0, ,B220004
+HDTT22010005, 2022-01-30, 0, ,B220005</Data>
+  <Pattern>('$0', '$1', '$2', '$3', '$4'),</Pattern>
+  <RowDelimiter>\n</RowDelimiter>
+  <ColumnDelimiter>,</ColumnDelimiter>
+</Session>
